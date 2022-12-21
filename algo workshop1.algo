@@ -3,7 +3,7 @@ VAR
     str:STRING;
     i,sumvowels:INTEGR:=0;
     sum:INTEGER:=1;
-    array:array_name :=['a','e','i','u'];
+    array : ARRAY_OF CHAR[4]; :=['a','e','i','u'];
 BEGIN
     Read(str);
     for (i<length(str))
