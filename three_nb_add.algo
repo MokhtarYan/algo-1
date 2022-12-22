@@ -1,0 +1,23 @@
+ALGORITHM Algo_workshop_1 
+VAR
+    str:STRING;
+    i,sumvowels:INTEGR:=0;
+    sum:INTEGER:=1;
+    array: ARRAY_OF CHAR[4]; :=['a','e','i','u'];
+BEGIN
+    Read(str);
+    FOR i FROM 0 TO str.length-1 STEP 1 DO
+        IF (str[i]=' ') THEN
+           sum:=sum+1;
+        END_IF
+    END_FOR
+    FOR i FROM 0 TO str.length-1 STEP 1 DO
+        FOR j FROM 0 TO array.length-1 STEP 1  DO
+        IF (str[i]=array[j]) THEN
+        sumvowels:=sumvowels+1;
+    END_FOR
+   
+    Write(length(str));
+    Write(sum);
+    Write(sumvowels);
+END
